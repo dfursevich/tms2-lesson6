@@ -7,6 +7,8 @@ import java.util.Scanner;
  * @author Dzmitry Fursevich
  */
 public class Computer {
+    private static final String COMP_IS_DAMAGED = "Компьютер сгорел";
+
     private int cpu;
     private int hdd;
     private int ram;
@@ -35,10 +37,10 @@ public class Computer {
                     System.out.println("Компьтер включился");
                 } else {
                     resource = 0;
-                    System.out.println("Компьютер сгорел");
+                    System.out.println(COMP_IS_DAMAGED);
                 }
             } else {
-                System.out.println("Компьютер сгорел");
+                System.out.println(COMP_IS_DAMAGED);
             }
         } else {
             System.out.println("Компьютер уже включен");
@@ -57,7 +59,7 @@ public class Computer {
                     System.out.println("Компьютер сгорел");
                 }
             } else {
-                System.out.println("Компьютер сгорел");
+                System.out.println(COMP_IS_DAMAGED);
             }
         } else {
             System.out.println("Комьютер уже выключен");
