@@ -12,5 +12,9 @@ public class Runner {
         tom.greet();
 
         System.out.println("tom.getInstagram() = " + tom.getInstagram());
+
+        Animal dog = new Dog("Sharky", 5, 10);
+        dog.printInfo();
+        dog.greet();
     }
 }

@@ -3,7 +3,7 @@ package by.teachmeskills.lesson6.animal;
 /**
  * @author Dzmitry Fursevich
  */
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
 
@@ -32,4 +32,6 @@ public class Animal {
         System.out.println("name = " + name);
         System.out.println("age = " + age);
     }
+
+    public abstract void greet();
 }

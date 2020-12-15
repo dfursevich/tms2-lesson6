@@ -25,4 +25,12 @@ public class Rectangle extends Figure {
     public double getArea() {
         return width * height;
     }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", height=" + height +
+                '}';
+    }
 }
